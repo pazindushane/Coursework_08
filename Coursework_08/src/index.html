@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rotation</title>
+    <link rel="stylesheet" href="assests/css/normalize.css">
+    <style>
+
+        body{
+            margin: 0;
+        }
+
+        body>main>div{
+            position: absolute;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: gray 10px solid;
+            border-radius:100%;
+            border-top: red 10px solid;
+            background: deeppink;
+            cursor: pointer;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+
+        }
+
+        body>main>div:nth-child(1)>div{
+            width: 8px;
+            height: 169px;
+            background: red;
+            border: none;
+            border-radius: 0px;
+            position: absolute;
+            /* left: 145px; */
+            right: 96px;
+            transition: none;
+            transform: rotate(227deg);
+            top: 9px;
+            bottom: 54px;
+
+
+
+        }
+
+
+        div:hover{
+            transform: rotate(360deg);
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div>
+        <div class="needle"></div>
+    </div>
+
+
+</main>
+</body>
+
+</html>
